@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amkod Consultancy Services</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Add this Tailwind Animation plugin CSS -->
+  <style>
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-down {
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-fade-in-down {
+      animation: fadeInDown 1s ease-out;
+    }
+
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const targetID = this.getAttribute('href');
+        const targetElement = document.querySelector(targetID);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start',
+          });
+        }
+      });
+    });
+  </script>
+</head>
+
+<body class="font-sans text-gray-800">
+  <!-- Header -->
+  <header class="bg-white border-b shadow-sm">
+    <div class="container mx-auto flex justify-between items-center py-4 px-4 md:px-8">
+      <!-- <h1 class="text-xl font-bold">AMKOD CONSULTANCY SERVICES</h1> -->
+      <img class="w-auto sm:h-24 h-10" src="./images/AMKODLogopng.png" alt="hello world">
+      <nav>
+        <ul class="flex sm:space-x-6 space-x-2">
+          <li><a href="#" class="hover:text-green-600">Home</a></li>
+          <li><a href="#about-us" class="hover:text-green-600">About</a></li>
+          <li><a href="#services" class="hover:text-green-600">Services</a></li>
+          <li><a href="#contact" class="hover:text-green-600">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="relative py-20 bg-cover bg-center text-white"
+    style="background-image: url('https://cdn.b12.io/client_media/yBTAYVaC/ed08a4c6-ad82-11ef-bbd0-0242ac110002-jpg-hero_image.jpeg');">
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black opacity-70"></div>
+    <!-- Content -->
+    <div class="relative container mx-auto px-4 md:px-8">
+      <div class="text-center space-y-6">
+        <h1 class="text-4xl md:text-5xl font-extrabold animate-fade-in-down">
+          Welcome to AMKOD
+        </h1>
+        <p class="text-lg md:text-xl leading-relaxed max-w-4xl mx-auto animate-fade-in-up">
+          At AMKOD, we are dedicated to revolutionizing the IT landscape with cutting-edge consultancy and world-class
+          equipment supply. Based on years of expertise and a passion for innovation, we provide tailored solutions that
+          empower businesses to thrive in today’s fast-paced, technology-driven world.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <!-- <section class="relative bg-gray-800 text-white">
+    <div class="absolute inset-0 bg-cover bg-center opacity-70"
+      style="background-image: url('https://cdn.b12.io/client_media/yBTAYVaC/ed08a4c6-ad82-11ef-bbd0-0242ac110002-jpg-hero_image.jpeg');">
+    </div>
+    <div class="relative container mx-auto px-4 md:px-8 py-20 text-center">
+      <h2 class="text-4xl md:text-6xl font-bold mb-4">Empowering your tech</h2>
+      <p class="text-lg md:text-xl mb-8">Innovative solutions for success</p>
+      <a href="#" class="inline-block bg-green-500 text-white py-3 px-6 rounded-lg text-lg hover:bg-green-600">
+        VIEW SERVICES
+      </a>
+    </div>
+  </section> -->
+
+
+
+
+  <!-- About Section -->
+  <section class="container mx-auto px-4 md:px-8 py-16">
+    <h3 class="text-2xl font-bold text-green-600 mb-4">Expert ICT solutions tailored for you</h3>
+    <p class="text-lg mb-6">
+      At Amkod Consultancy Services, we specialize in delivering top-notch ICT consultancy solutions. Our team is
+      dedicated to
+      providing the latest IT equipment and customized solutions to meet your specific needs.
+    </p>
+    <a href="#" class="text-green-500 hover:underline font-semibold">Get in touch</a>
+  </section>
+
+
+  <!-- Vision and Mission Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 md:px-8">
+      <h2 class="text-3xl font-bold text-green-600 text-center mb-8">Vision and Mission</h2>
+      <div class="flex gap-4 flex-col sm:flex-row">
+        <!-- Vision -->
+        <div class="bg-gray-50 shadow-md rounded-lg p-8 hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Vision</h3>
+          <p class="text-gray-600 leading-relaxed">
+            To be the leading IT consultancy and equipment supplier, driving digital transformation and innovation
+            across industries, empowering businesses to excel in the ever-evolving technological landscape.
+          </p>
+        </div>
+        <!-- Mission -->
+        <div class="bg-gray-50 shadow-md rounded-lg p-8 hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">Our Mission</h3>
+          <ul class="list-disc list-inside space-y-3 text-gray-600 leading-relaxed">
+            <li>
+              <span class="font-semibold">To provide tailored IT consultancy services:</span> Solving complex business
+              challenges and unlocking new opportunities.
+            </li>
+            <li>
+              <span class="font-semibold">To deliver high-quality, reliable IT equipment:</span> Meeting the unique
+              needs of our clients with precision.
+            </li>
+            <li>
+              <span class="font-semibold">To build lasting partnerships:</span> Offering exceptional service, continuous
+              support, and cutting-edge solutions.
+            </li>
+            <li>
+              <span class="font-semibold">To promote innovation and growth:</span> Leveraging the latest technology
+              trends and industry best practices.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-green-50" id="about-us">
+    <div class="container mx-auto px-4 md:px-8">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold text-green-700 mb-6 animate-fade-in-down">Who We Are</h2>
+        <p class="text-gray-700 text-lg leading-relaxed max-w-3xl mx-auto animate-fade-in-up">
+          AMKOD is your trusted partner in IT consultancy and equipment supply. We specialize in helping organizations
+          streamline operations, improve efficiency, and achieve their strategic goals through the implementation of
+          robust technology systems and solutions. Whether you're a startup or an established enterprise, we cater to
+          all your IT needs with professionalism and precision.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Our Services Section -->
+  <section class="py-16 bg-gray-50" id="services">
+    <div class="container mx-auto px-4 md:px-8">
+      <h2 class="text-3xl font-bold text-green-600 text-center mb-8">Our Services</h2>
+      <div class="gap-4 flex flex-col sm:flex-row">
+        <!-- Service 1: IT Consultancy -->
+        <div class="bg-white shadow-md rounded-lg p-8 hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">IT Consultancy</h3>
+          <p class="text-gray-600 mb-6">
+            We provide expert guidance to help you navigate the complexities of modern IT.
+          </p>
+          <ul class="list-disc list-inside space-y-3 text-gray-600">
+            <li>
+              <span class="font-semibold">System Design & Integration:</span> We analyze your business needs and design
+              customized systems that align with your objectives.
+            </li>
+            <li>
+              <span class="font-semibold">Digital Transformation:</span> From upgrading legacy systems to implementing
+              cloud solutions, we help future-proof your business.
+            </li>
+            <li>
+              <span class="font-semibold">Network Solutions:</span> Optimize your IT infrastructure for scalability,
+              security, and performance.
+            </li>
+          </ul>
+        </div>
+        <!-- Service 2: IT Equipment Supply -->
+        <div class="bg-white shadow-md rounded-lg p-8 hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">IT Equipment Supply</h3>
+          <p class="text-gray-600 mb-6">
+            We source and deliver high-quality IT hardware and software tailored to your requirements.
+          </p>
+          <ul class="list-disc list-inside space-y-3 text-gray-600">
+            <li>
+              <span class="font-semibold">Computers and Peripherals:</span> Laptops, desktops, printers, and more.
+            </li>
+            <li>
+              <span class="font-semibold">Networking Equipment:</span> Routers, switches, and cabling for robust
+              connectivity.
+            </li>
+            <li>
+              <span class="font-semibold">Data Storage Solutions:</span> Secure, scalable storage systems to protect
+              your data.
+            </li>
+            <li>
+              <span class="font-semibold">Customized IT Packages:</span> Pre-configured systems for specific industries
+              or applications.
+            </li>
+          </ul>
+        </div>
+        <!-- Service 3: System Implementation & Support -->
+        <div class="bg-white shadow-md rounded-lg p-8 hover:shadow-lg transition">
+          <h3 class="text-2xl font-semibold text-gray-800 mb-4">System Implementation & Support</h3>
+          <p class="text-gray-600 mb-6">
+            We don’t just deliver solutions; we ensure they work seamlessly.
+          </p>
+          <ul class="list-disc list-inside space-y-3 text-gray-600">
+            <li>
+              <span class="font-semibold">Installation & Configuration:</span> End-to-end setup for all IT systems.
+            </li>
+            <li>
+              <span class="font-semibold">Maintenance & Troubleshooting:</span> Reliable support to keep your systems
+              running smoothly.
+            </li>
+            <li>
+              <span class="font-semibold">Training & Knowledge Transfer:</span> Empower your team to maximize the
+              potential of your IT investments.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Services Section -->
+  <section class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4 md:px-8">
+      <h3 class="text-2xl font-bold text-green-600 mb-10 text-center">Empowering your technology needs</h3>
+      <div class="grid gap-6 md:grid-cols-3">
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h4 class="text-xl font-semibold mb-3">ICT Consultancy</h4>
+          <p class="text-gray-600">Expert guidance on information and communication technology.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h4 class="text-xl font-semibold mb-3">IT Equipment Supply</h4>
+          <p class="text-gray-600">Reliable sourcing of top-notch IT equipment.</p>
+        </div>
+        <div class="bg-white shadow-md rounded-lg p-6 text-center">
+          <h4 class="text-xl font-semibold mb-3">Custom Solution Development</h4>
+          <p class="text-gray-600">Tailored software and system solutions for your needs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-4 md:px-8 text-center">
+      <h3 class="text-2xl font-bold text-green-600 mb-6">Why Choose Us?</h3>
+      <p class="text-lg text-gray-600 mb-12">
+        At Amkod Consultancy Services, we are committed to providing exceptional services that empower your business.
+        Here’s what sets us apart:
+      </p>
+      <div class="grid gap-6 md:grid-cols-4">
+        <!-- Feature 1 -->
+        <div class="p-6 bg-gray-100 shadow-md rounded-lg">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Expertise You Can Trust</h4>
+          <p class="text-gray-600">
+            Our team of experienced IT consultants and technicians are committed to delivering excellence at every step.
+          </p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="p-6 bg-gray-100 shadow-md rounded-lg">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Tailored Solutions</h4>
+          <p class="text-gray-600">
+            We understand that no two businesses are the same. Our solutions are customized to meet your unique
+            requirements
+          </p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="p-6 bg-gray-100 shadow-md rounded-lg">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Quality Assurance</h4>
+          <p class="text-gray-600">
+            We partner with leading manufacturers and suppliers to provide you with the best IT equipment on the market.
+          </p>
+        </div>
+
+        <div class="p-6 bg-gray-100 shadow-md rounded-lg">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Customer-Centric Approach</h4>
+          <p class="text-gray-600">
+            Your success is our priority. We work closely with you to ensure your satisfaction and long-term growth.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Industries We Serve Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4 md:px-8 text-center">
+      <h3 class="text-2xl font-bold text-green-600 mb-6">Industries We Serve</h3>
+      <p class="text-lg text-gray-600 mb-12">
+        Our solutions are tailored to meet the needs of diverse industries. Here are some of the sectors we serve:
+      </p>
+      <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <!-- Industry 1 -->
+        <div class="p-6 bg-white shadow-md rounded-lg hover:shadow-lg transition">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-laptop"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Small and Medium Enterprises (SMEs)</h4>
+
+        </div>
+        <!-- Industry 2 -->
+        <div class="p-6 bg-white shadow-md rounded-lg hover:shadow-lg transition">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-user-md"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Corporate Businesses</h4>
+          <!-- <p class="text-gray-600">
+          Streamlined systems for hospitals, clinics, and insurance providers.
+        </p> -->
+        </div>
+        <!-- Industry 3 -->
+        <div class="p-6 bg-white shadow-md rounded-lg hover:shadow-lg transition">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-landmark"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Educational Institutions</h4>
+          <!-- <p class="text-gray-600">
+          Secure and efficient ICT solutions for government institutions.
+        </p> -->
+        </div>
+        <!-- Industry 4 -->
+        <div class="p-6 bg-white shadow-md rounded-lg hover:shadow-lg transition">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-industry"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Government Agencies</h4>
+          <!-- <p class="text-gray-600">
+          Optimized operations for manufacturing and supply chain sectors.
+        </p> -->
+        </div>
+        <!-- Industry 5 -->
+        <div class="p-6 bg-white shadow-md rounded-lg hover:shadow-lg transition">
+          <div class="text-green-500 text-4xl mb-4">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h4 class="text-xl font-semibold mb-3">Healthcare Providers</h4>
+          <!-- <p class="text-gray-600">
+          Tailored solutions for banks, fintech, and financial services.
+        </p> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="container mx-auto px-4 md:px-8 py-16 flex flex-col md:flex-row gap-10">
+    <!-- Contact Form -->
+    <!-- <div class="flex-1">
+      <h3 class="text-2xl font-bold text-green-600 mb-6">We're here to assist you!</h3>
+      <form class="space-y-4">
+        <input type="text" placeholder="Name"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-300" required>
+        <input type="email" placeholder="Email Address"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-300" required>
+        <input type="text" placeholder="Phone Number"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-300">
+        <textarea placeholder="Message" rows="5"
+          class="w-full border rounded-lg p-3 focus:outline-none focus:ring focus:ring-green-300"></textarea>
+        <button type="submit" class="w-full bg-green-500 text-white py-3 rounded-lg hover:bg-green-600">SUBMIT</button>
+      </form>
+    </div> -->
+    <!-- Contact Info -->
+    <div class="flex-1 bg-gray-100 rounded-lg p-6">
+      <h3 class="text-2xl font-bold text-green-600 mb-6">Get in touch</h3>
+      <p>
+        Are you ready to elevate your IT infrastructure or need expert consultancy for your next project?
+      </p>
+      <h2>Contact AMKOD today to explore how we can help you achieve your goals.</h2>
+      <p class="mb-4"><strong>Email:</strong> <a href="mailto:sowepulloh@gmail.com"
+          class="text-green-500 hover:underline">info@amkodconsultancyfirm.gm</a></p>
+      <p class="mb-4"><strong>Location:</strong> Bundung, Kanifing Municipality, The Gambia, West Africa</p>
+      <div  class="mb-4">
+        <p><strong>Phone Number:</strong></p>
+        <ul>
+          <li>(+220) 4390859</li>
+          <li>(+220) 3201025</li>
+        </ul>
+      </div>
+     
+      <p class="mb-4"><strong>Hours:</strong></p>
+      <ul>
+        <li>Monday - Friday: 9:00 AM - 10:00 PM</li>
+        <li>Saturday: 9:00 AM - 6 :00 PM</li>
+        <li>Sunday: 9:00 AM - 12:00 PM</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-black text-white py-6 text-center">
+    <p>&copy; 2024 AMKOD Consultancy Services. All rights reserved.</p>
+    <p>Powered by <a href="#" class="text-green-500 hover:underline">Gam Code Plus</a></p>
+  </footer>
+</body>
+
+</html>
